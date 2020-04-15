@@ -14,7 +14,7 @@
 #### --graph 可以展示版本演变图
 #### 以上可以组合使用
 
-### 4、打开git图形化界面：gitk
+### 4、打开git图形化界面：gitk --all(表示展示所有分支关系可选)
 
 ### 5、git里面的三个对象：commit tree(文件数) blob(文件)
 
@@ -28,7 +28,12 @@
 ### 7、比对两次提交的改变：git diff xxx xxx 
 #### xxx可以根据 git log 打印出来的hash信息，
 #### 也可以根据HEAD HEAD^1（上一级）HEAD^1^1（上两级）
-#### git diff HEAD^1 HEAD（目前的）
+#### git diff HEAD^1（之前的） HEAD（目前的）
+
+### 8、删除分支操作：git branch -d xxx(分支名)
+#### 有时候git会提示该分支没有merge的操作，确认删除此分支使用 -D
+
+
 
 
 
