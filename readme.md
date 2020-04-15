@@ -20,6 +20,7 @@
 
 ### 6、切换分支：git checkout -b 分支名xxx 基于哪个分支xxx
 #### 例如 基于 master 创建 temp : git checkout -b temp master
+#### 基于某个分支（某次提交）创建分支，新创建的分支内容就会保留该基分支的内容（在暂存区）。
 #### git log -n1 可以看到 最新的提交信息里面 (HEAD -> temp, master)
 #### 每一次提交，当前分支会前进一次，例如在temp提交一次后再次打印git log
 #### git log -n2： (HEAD -> temp) 和 (master)两条提交信息，master不前进
@@ -33,8 +34,33 @@
 ### 8、删除分支操作：git branch -d xxx(分支名)
 #### 有时候git会提示该分支没有merge的操作，确认删除此分支使用 -D
 
+### 9、修改最近一次commit （的 message）信息：git commit --amend
+#### 编辑第一行的message，esc退出编辑，:wq保存并退出
+
+### 10、修改以前的commit （的 message） 信息： git rebase -i 要改的父亲的hash
+#### 编辑第一行的 pick 为r（reword表示只改message），esc退出编辑，:wq保存并退出
+#### 再次编辑 message，esc退出编辑，:wq保存并退出（:q!放弃修改并退出）
+
+### 11、合并几次commit：git rebase -i 要合并的最前的commit的父的hash
+####  编辑要合并的 commit 的前面为s
 
 
+pick ddcb7ba save readme
+s 49c58fc save readme 2
+s 15eb7b7 change readme 3
+pick acfb6cc change message
+
+
+
+#### 第一行是为pick不变
+#### 最后一行是最新也不变
+#### 然后保存退出来到message继续编辑信息保存退出
+
+### 注意 修改 commit(变基操作) 的操作比较适合在本地的自己的分支上面操作，
+### 涉及他人或者远程分支的修改操作要谨慎
+
+
+ 
 
 
 
