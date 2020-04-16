@@ -74,8 +74,14 @@ pick acfb6cc change message
 ### 16、撤销commit操作回到某个commit：git reset --hard xxx(hash值)
 #### 注意工作区的东西也会回到那个commit， 谨慎操作
 
-### 17、删除版本库文件：git rm -- (文件名)
+### 17、删除工作区文件：git rm -- (文件名)
+#### git rm 相当于先在工作区删除文件然后git add
 
+### 18、不使用add但是要暂存工作区内容的办法：git stash
+#### 修改东西后未 add，先 git stash 暂存，然后进行其他开发，结束之后
+#### git stash list 查看暂存的东西，再通过git stash pop/apply(保留list的信息)恢复工作区的内容
+
+ 
 
 
 
