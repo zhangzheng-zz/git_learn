@@ -63,6 +63,19 @@ pick acfb6cc change message
 
 ### 13、工作区与暂存区作比较：git diff （-- 文件名）
 
+### 14、从暂存区恢复到工作区：git reset HEAD
+#### 可以通过git status查看是否恢复为未 add 的状态
+#### 再通过 git diff --cached 查看暂存区与工作区无区别
+
+### 15、想从暂存区恢复文件到工作区：git checkout -- (文件名)
+#### 注意，本地工作区的代码会被恢复
+#### 未进行 add 的代码被 add 的代码覆盖掉
+
+
+
+
+
+
 
  
 
