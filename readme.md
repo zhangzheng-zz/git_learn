@@ -34,7 +34,7 @@
 ### 8、删除分支操作：git branch -d xxx(分支名)
 #### 有时候git会提示该分支没有merge的操作，确认删除此分支使用 -D
 
-### 9、修改最近一次commit （的 message）信息：git commit --amend
+### 9、修改最近一次commit 的 message 信息：git commit --amend
 #### 编辑第一行的message，esc退出编辑，:wq保存并退出
 
 ### 10、修改以前的commit （的 message） 信息： git rebase -i 要改的父亲的hash
@@ -58,6 +58,10 @@ pick acfb6cc change message
 
 ### 注意 修改 commit(变基操作) 的操作比较适合在本地的自己的分支上面操作，
 ### 涉及他人或者远程分支的修改操作要谨慎
+
+### 12、暂存区内容(已经git add)与当前HEAD作比较：git diff --cache
+
+### 13、工作区与暂存区作比较：git diff （-- 文件名）
 
 
  
