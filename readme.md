@@ -63,7 +63,7 @@ pick acfb6cc change message
 
 ### 13、工作区与暂存区作比较：git diff （-- 文件名）
 
-### 14、从暂存区恢复到工作区：git reset HEAD
+### 14、（撤销add的操作）从暂存区恢复到工作区：git reset HEAD
 #### 可以通过git status查看是否恢复为未 add 的状态
 #### 再通过 git diff --cached 查看暂存区与工作区无区别
 
@@ -71,6 +71,10 @@ pick acfb6cc change message
 #### 注意，本地工作区的代码会被恢复
 #### 未进行 add 的代码被 add 的代码覆盖掉
 
+### 16、撤销commit操作回到某个commit：git reset --hard xxx(hash值)
+#### 注意工作区的东西也会回到那个commit， 谨慎操作
+
+### 17、删除版本库文件：git rm -- (文件名)
 
 
 
