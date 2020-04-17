@@ -45,10 +45,10 @@
 ####  编辑要合并的 commit 的前面为s
 
 
-pick ddcb7ba save readme
-s 49c58fc save readme 2
-s 15eb7b7 change readme 3
-pick acfb6cc change message
+### pick ddcb7ba save readme
+### s 49c58fc save readme 2
+### s 15eb7b7 change readme 3
+### pick acfb6cc change message
 
 
 
@@ -80,6 +80,22 @@ pick acfb6cc change message
 ### 18、不使用add但是要暂存工作区内容的办法：git stash
 #### 修改东西后未 add，先 git stash 暂存，然后进行其他开发，结束之后
 #### git stash list 查看暂存的东西，再通过git stash pop/apply(保留list的信息)恢复工作区的内容
+
+### 19、多人协作开发同一条远程分支
+#### 远程仓库基于master 新建 feature/add_git_commands
+#### 本地（另一个人B）克隆仓库并基于 origin/feature/add_git_commands 新建本地feature/add_git_commands
+#### B 通过 git --config --add --local user.name/user.emal xxx设置名字和邮箱
+#### B 在分支开发完提交 到远程分支上 origin/feature/add_git_commands
+
+#### A git fetch xxx（分支名）拉取远程分支并基于远程分支新建本地分支做开发
+
+#### B 开发有了新push
+
+#### A开发完要push发现失败
+#### A git fetch xxx(分支名)拉取最新到本地
+#### A git merge origin/xxx(分支名) 合并本地和远程的新东西（B的）
+#### A git push
+
 
  
 
