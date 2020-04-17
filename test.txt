@@ -1,4 +1,4 @@
 hello git test
 来自git-learn02的更改（push到 这个·feature/add_git_commands远程分支）
 
-BBBBBBBBBBBBBBB
+BBBBBBBBBBBBBBB（AAAAAAA冲突）

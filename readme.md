@@ -96,6 +96,9 @@
 #### A git merge origin/xxx(分支名) 合并本地和远程的新东西（B的）
 #### A git push
 
+### 20、git fetch 和 git pull 的区别
+#### git pull = git fetch + git merge 也就是会将本地关联的分支与远程最新的代码进行自动合并
+
 
  
 
