@@ -63,7 +63,7 @@
 
 ### 13、工作区与暂存区作比较：git diff （-- 文件名）
 
-### 14、（撤销add的操作）从暂存区恢复到工作区：git reset HEAD
+### 14、（撤销add的操作）从暂存区恢复到工作区：git reset HEAD（回滚到哪个提交）
 #### 可以通过git status查看是否恢复为未 add 的状态
 #### 再通过 git diff --cached 查看暂存区与工作区无区别
 
@@ -100,7 +100,10 @@
 #### git pull = git fetch + git merge 也就是会将本地关联的分支与远程最新的代码进行自动合并
 
 
- 
+### 21、github 搜索技巧：关键字默认是匹配仓库名称和描述
+#### in:readme 匹配readme里面  
+#### start:>1000 start大于1000
+
 
 
 
