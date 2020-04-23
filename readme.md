@@ -1,3 +1,5 @@
+## git 学习笔记
+---
 ### 1、git 查看用户配置信息：git config  --list --xx
 ---
 #### global：对当前用户所有仓库有效
